@@ -1,0 +1,62 @@
+       /* Custom styling for the cards */
+       .card {
+        border: none;
+        border-radius: 10px;
+        background-image: -moz-linear-gradient();
+        transition: optacity 1s ease;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(226, 114, 1, 0.15);
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        height: 250px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .card-text {
+        color: #555;
+        transition: max-height 0.3s ease-in-out;
+        max-height: 60px; /* Initially show limited text */
+        overflow: hidden;
+    }
+
+    .card-text.full-text {
+        max-height: 200px; /* Show full text when hovered */
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .btn-primary {
+        background-color: white;
+        border-color:white;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .btn-primary:hover {
+        background-color: #8B4513;
+        border-color: #8B4513;
+    }
+    .btn-primary{
+    
+    color: #8B4513;
+}
+
+    .card:hover .card-text {
+        max-height: 200px;
+    }
+    .a{
+        background-color: rgb(248, 246, 244);
+    }

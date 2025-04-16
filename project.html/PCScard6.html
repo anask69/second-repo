@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar1.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body {
+            background-color: rgb(248, 246, 244);
+        }
+        .product-card {
+            max-width: 600px;
+            background: #F5F5DC;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(226, 114, 1, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .product-image img {
+            height: 390px;
+            width: 270px;
+            border-radius: 10px;
+        }
+        .btn-buy {
+            background-color: #4a6cf7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="logo4.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <b><li class="nav-item"><a class="nav-link" href="navbar1.html">Home</a></li></b>
+            <b><li class="nav-item"><a class="nav-link" href="navbar1.html">Location</a></li></b>
+            <b> <li class="nav-item"><a class="nav-link" href="navbar1.html">Contact</a></li></b>
+           <b> <li class="nav-item">
+                <a class="nav-link" href="navbar1.html">Introduction</a> <!-- Anchor link to intro section -->
+              </li><b></b>
+
+        </ul>
+         <!-- Icons at the end of the navbar -->
+         <div class="navbar-icons aria-expanded">
+            <i class="bi bi-meta"></i>
+          </div>
+        </div>
+      </nav>
+
+
+     <!-- SINGLE CARD -->
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="product-card">
+            <div class="product-image me-3">
+                <img src="images/plastic chairs-20250328T190913Z-001/plastic chairs/Urban Stack Chair.jpg" alt="Product Image">
+            </div>
+            <div>
+                <h4>Urban Stack Chair</h4>
+                <h5>$15.00 <span class="text-success">30% OFF</span></h5>
+                <p>The Genesis LBC supports spinal health with its unique fit and advanced adjustments, promoting posture and improving blood flow for all-day comfort and activity.</p>
+                <!-- <p>Size: S M L XL XXL</p>
+                <p>Color: 🔴 🔵 ⚫ ⚪</p> -->
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" class="form-control w-25" value="1">
+                <button class="btn btn-buy mt-3 w-100">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-section">
+              <h3 style="text-align: center;">RICHFIEL CHAIRS Store</h3>
+              <p>Here you can find the related chairs you need for your sweet home.</p>
+              <div class="footer-section" style="text-align: center;">
+                
+                <p><a style="text-align: center;" href="cards1.html">Loung Chairs</a></p>
+                <p><a  style="text-align: center;"href="card2.html">Office Chairs</a></p>
+                <p><a style="text-align: center;" href="card3.html">Plastic Chairs</a></p>
+                <!-- <p><a href="#">Blogs</a></p>
+                <p><a href="#">Claim</a></p> -->
+            </div>
+          </div>
+          <div class="footer-section">
+              <h3>USEFUL LINKS</h3>
+              <p><a href="contact1.html">Contact Us</a></p>
+              <p><a href="about.html">About Us</a></p>
+              <!-- <p><a href="#">Blogs</a></p>
+              <p><a href="#">Claim</a></p> -->
+          </div>
+          <div class="footer-section">
+              <h3>CONTACT</h3>
+              <p>&#x1F4CD; 4/1119 Liaqatabad Furniture Market Service Road, Block 4 Liaquatabad Town, Karachi, 75900, Pakistan
+                Open: Monday to Saturday, 10 AM - 6 PM</p>
+              <p>&#x2709; <a href="contact1.html">richfield126@gmail.com</a></p>
+              <p>&#x260E; +92 315 2487693</p>
+              <p>&#x260E; +92 346 8939037</p>
+              <div class="social-icons">
+                  <a href="#">&#x1F426;</a> <!-- Facebook Icon -->
+                  <a href="#">&#x1F426;</a> <!-- Twitter Icon -->
+                  <a href="#">&#x1F426;</a> <!-- Google Icon -->
+              </div>
+          </div>
+      </div>
+      <br><br>
+      <p>&copy; 2025 Furniture Shop. All rights reserved. <a href="navbar1.html">Richfield Chairs</a></p>
+  </footer>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

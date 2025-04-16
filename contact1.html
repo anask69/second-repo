@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar1.css">
+    <style>
+        /* body {
+            padding-top: 50px;
+        } */
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .contact-info h3 {
+            margin-bottom: 20px;
+        }
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; 
+            height: 0;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .a{
+            background-color: rgb(248, 246, 244);
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+    <!-- Navbar -->
+   <nav> <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="logo4.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" >
+            <b><li class="nav-item"><a class="nav-link" href="#location">Location</a></li></b>
+            <b> <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li></b>
+            <b><li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li></b>
+           <b> <li class="nav-item">
+                <a class="nav-link" href="#intro-section">Introduction</a> <!-- Anchor link to intro section -->
+              </li><b></b>
+
+        </ul>
+        </nav>
+
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h3>Our Location</h3>
+                    <p><strong>Company Name</strong></p>
+                    <p>1234 Street Address, City, Country</p>
+                    <p>Email: info@company.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <div class="map-container">
+                        <!-- Embedded Google Map -->
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q=24.8607,67.0450&key=YOUR_GOOGLE_MAPS_API_KEY" 
+                    width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <p> 2025 Furniture Shop. All rights reserved.</p>
+  </footer>
+
+    
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+</html>

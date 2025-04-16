@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar1.css">
+    <style>
+        body {
+            background-color: rgb(248, 246, 244);
+        }
+        .product-card {
+            max-width: 600px;
+            background: #F5F5DC;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(226, 114, 1, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .product-image img {
+            height: 390px;
+            width: 270px;
+            border-radius: 10px;
+        }
+        .btn-buy {
+            background-color: #4a6cf7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="logo4.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <b><li class="nav-item"><a class="nav-link" href="navbar1.html">Home</a></li></b>
+            <b><li class="nav-item"><a class="nav-link" href="navbar1.html">Location</a></li></b>
+            <b> <li class="nav-item"><a class="nav-link" href="navbar1.html">Contact</a></li></b>
+           <b> <li class="nav-item">
+                <a class="nav-link" href="navbar1.html">Introduction</a> <!-- Anchor link to intro section -->
+              </li><b></b>
+
+        </ul>
+         <!-- Icons at the end of the navbar -->
+         <div class="navbar-icons aria-expanded">
+            <i class="bi bi-meta"></i>
+          </div>
+        </div>
+      </nav>
+
+
+     <!-- SINGLE CARD -->
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="product-card">
+            <div class="product-image me-3">
+                <img src="images/plastic chairs-20250328T190913Z-001/plastic chairs/Classic Patio Chair.jpg" alt="Product Image">
+            </div>
+            <div>
+                <h4>Classic Patio Chair</h4>
+                <h5>$15.00 <span class="text-success">30% OFF</span></h5>
+                <p>A lightweight and durable plastic chair, designed for outdoor comfort. Its weather-resistant build and slatted backrest make it ideal for gardens, patios, and casual seating areas.</p>
+                <!-- <p>Size: S M L XL XXL</p>
+                <p>Color: 🔴 🔵 ⚫ ⚪</p> -->
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" class="form-control w-25" value="1">
+                <button class="btn btn-buy mt-3 w-100">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <p> 2025 Furniture Shop. All rights reserved.</p>
+  </footer>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

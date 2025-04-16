@@ -1,0 +1,212 @@
+
+    /* Navbar customization */
+    .navbar-custom {
+      background-color: #8B4513; /* Brown */
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #F5F5DC !important; /* Beige */
+    }
+
+    /* .navbar-custom .nav-link:hover {
+      color: #ffe4c4 !important; Lighter beige on hover
+    } */
+
+    /* Logo inside navbar */
+    .navbar-brand img {
+      max-width: 100%;    /* Make sure logo doesn't overflow */
+      height: auto;      /* Maintain aspect ratio */
+      width: 50px;       /* Set a fixed width */
+      /* Adjust the width to fit the navbar size */
+    }
+
+    /* Responsiveness: Adjust logo size on smaller screens */
+    @media (max-width: 576px) {
+      .navbar-brand img {
+        width: 40px; /* Make logo smaller on smaller screens */
+      }
+    }
+
+    /* Make the navbar logo and links vertically centered */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        /* Navbar Customization */
+        .navbar-custom {
+            background-color: #8B4513; /* Brown */
+          }
+          .navbar-custom .navbar-brand,
+          .navbar-custom .nav-link {
+            color: #F5F5DC !important; /* Beige */
+          }
+          .navbar-custom .nav-link:hover {
+            color: #ffe4c4 !important; /* Lighter beige on hover */
+          }
+          .navbar-nav {
+            display: flex;
+            justify-content: center; /* Center navbar items */
+            width: 100%; /* Take full width for centering */
+          
+          }
+          .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center vertically */
+            padding: 5px 15px;    /* Add padding to adjust spacing */
+          }
+
+          .navbar-brand{
+            background-color:transparent;
+
+          }
+          .navbar-brand img {
+            max-width: 100%;
+              height: auto;
+              width: 120px;
+           }
+           /* Add space between navbar items */
+    .nav-item {
+      margin-right: 20px; /* Increase the gap between items */
+    }
+
+    /* Icon container at the end of the navbar */
+    .navbar-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Space between icons */
+    }
+
+    .navbar-icons a {
+      color:beige ;/* Icon color */
+      font-size : 2rem; /* Increase the size of the icons */
+    }
+
+    .navbar-icons a:hover {
+      color: #ffe4c4; /* Lighter color on hover */
+    }
+
+
+ /* Custom Styling for the Carousel */
+ /* General reset for the carousel */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  padding: none;
+}
+
+/* Carousel Container */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Carousel Image */
+.carousel-img {
+  transition: transform 0.5s ease, filter 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Hover effect for carousel images */
+.carousel-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color:transparent;
+  opacity: inherit;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Active Image transition effect */
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Adding a subtle shadow effect when image is active */
+.carousel-item-next, .carousel-item-prev {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    max-height: 400px;
+  }
+}
+
+
+/* intro */
+/* Custom Styling */
+body {
+  background-color: #F5F5DC !important;
+}
+
+.section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.footer {
+  background-color: #8B4513;
+  color: #ffe4c4;
+  padding: 20px 0;
+  text-align: center;
+}
+.team-section{
+  background-color: #8B4513;
+  color: #ffe4c4;
+  text-align: center;
+}
+
+
+
+  
+
+      
+  

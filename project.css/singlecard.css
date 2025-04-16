@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(248, 246, 244);
+}
+.product-card {
+    max-width: 600px;
+    background: #F5F5DC;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(226, 114, 1, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.product-image img {
+    height: 390px;
+    width: 270px;
+    border-radius: 10px;
+}
+.btn-buy {
+    background-color: #4a6cf7;
+    color: white;
+}
